@@ -62,3 +62,4 @@ class Shower
 		@move()
 		
 window.Shower = Shower
+
