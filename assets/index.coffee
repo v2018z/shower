@@ -1,6 +1,6 @@
-$ = require('jquery');
-_ = require('lodash');
-require('./tweenmax');
+$ = require('jquery')
+_ = require('lodash')
+require('./tweenmax')
 class Shower
 	constructor: (options) ->
 		opt = {
@@ -60,5 +60,5 @@ class Shower
 		@render()
 		@regiterEvent()
 		@move()
-
+		
 window.Shower = Shower
