@@ -1,0 +1,52 @@
+<html>
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>气泡流星雨</title>
+	<style class="cp-pen-styles">
+    body {
+      background: #101010;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .container {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+    .container div {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 100%;
+      box-shadow: "0px 0px 4px 0px #9CEE02";
+    }
+    .tips {
+      color: #FFFFFF;
+      position: absolute;
+      z-index: 1000
+    }
+	</style>
+</head>
+<body>
+  <div class="container" style="opacity: 0.55; -webkit-perspective: 50px;">
+  </div>
+  <div class="tips">
+    点击任意处暂停
+  </div>
+<script src="bundle.js"></script>
+<script type="text/javascript">
+  var url = 'http://images.missyuan.com/attachments/day_090405/20090405_9da8da1d9d90f2393eb5NO61V5q4EfsQ.png';
+  var items = []
+  for(var i = 0; i < 400; i++){
+    items[i] = url
+  }
+  new Shower({
+    speed: 13,
+    items: items
+  })
+</script>
+</body>ddd
+</html>
+
