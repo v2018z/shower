@@ -20,18 +20,18 @@ class Shower
 		@tl = tl = new TimelineMax(repeat: -1)
 		@dots.each ->
 		  tl.add TweenMax.fromTo(@, speed,
-		    left: random(0, 100) + "%"
-		    top: random(0, 100) + "%"
-		    z: random(-725, 600)
-		    opacity: Math.random()
+			left: random(0, 100) + "%"
+			top: random(0, 100) + "%"
+			z: random(-725, 600)
+			opacity: Math.random()
 		  ,
-		    left: "+=" + random(10, 3) + "%"
-		    top: "+=" + random(10, 100) + "%"
-		    z: "+=" + random(725, 600)
-		    opacity: Math.random() + 0.1
-		    repeat: 1
-		    yoyo: false
-		    ease: Sine.easeInOut
+			left: "+=" + random(10, 3) + "%"
+			top: "+=" + random(10, 100) + "%"
+			z: "+=" + random(725, 600)
+			opacity: Math.random() + 0.1
+			repeat: 1
+			yoyo: false
+			ease: Sine.easeInOut
 	  ), 0
 
 	initialState: ->
@@ -60,5 +60,5 @@ class Shower
 		@render()
 		@regiterEvent()
 		@move()
-
+		
 window.Shower = Shower
